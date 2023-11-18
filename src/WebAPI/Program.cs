@@ -12,7 +12,7 @@ builder.Services.AddCors(
           builder =>
           {
               builder
-              .WithOrigins("http://localhost:8080")
+              .WithOrigins("http://localhost:8080") // This is for client side code (Angular/Aurelia ect..)
               .AllowAnyMethod()
               .AllowAnyHeader()
               .AllowCredentials();
